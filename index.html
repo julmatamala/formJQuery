@@ -14,15 +14,15 @@
 </head>
 <body>
 	<main>
-		<form action="" class="formulario" id="formulario">
+		<form action="" class="formulario" id="basic-form">
 			<!-- Grupo: rut -->
-			<div class="formulario__grupo" id="grupo__nombre">
+			<div class="formulario__grupo" id="grupo__rut">
 				<label for="nombre" class="formulario__label">rut</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="rut" id="rut" placeholder="xxxxxxxx-x">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 9 a 10 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+				<p class="formulario__input-error">El rut tiene que ser de 9 a 10 dígitos y solo puede contener numeros, letras y guion bajo.</p>
 			</div>
 
 			<!-- Grupo: Nombre -->
@@ -77,13 +77,27 @@
 
 			<!-- Grupo: Genero -->
 			<div class="formulario__grupo" id="grupo__Genero">
-				<label for="telefono" class="formulario__label">Genero</label>
+				<label for="Genero" class="formulario__label">Genero</label>
+				<p> Selecione el Genero: 
+					<select name="Genenero" id="Genenero"> 
+					  <option></option> 
+					  <option>Masculino</option> 
+					  <option>femenino</option> 				
+					  <option>Otro</option> 
+					</select > 
+				 </p>
+
+			</div>
+			<!-- Grupo: email -->
+			<div class="formulario__grupo" id="grupo__email">
+				<label for="email" class="formulario__label">E-mail</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="Genero" id="Genero">
+					<input type="email" class="formulario__input" name="email" id="email">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">Debe seleccionar una opcion</p>
-			</div>
+			</div>			
+
 			<!-- Grupo: Motivacion -->
 			<div class="formulario__grupo" id="grupo_motivacion">
 				<label for="Motivacion" class="formulario__label">Motivacion</label>
